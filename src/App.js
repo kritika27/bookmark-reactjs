@@ -46,23 +46,38 @@ function App() {
   return (
     <div className="App">
       <h1>BOOKMARKS</h1>
-      <form className="form" onSubmit={handleSubmit}>
-        <label>Website Name</label>
-        <input type="text" value={item} onChange={handleChange} />
-        <br></br>
-        <label>Website Url</label>
-        <input
-          type="text"
-          value={url}
-          onChange={(e) => setUrl(e.target.value)}
-        />
-        <p style={{ color: "red" }}>{error}</p>
-        <button className="btn" type="submit">
-          Add Bookmark
-        </button>
-        <br></br>
-        <br></br>
-      </form>
+
+      <div className="content">
+        <form id="bookmark-form" onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label className="form-label" for="website-name">
+              Website Name
+            </label>
+            <input
+              className="form-input"
+              type="text"
+              id="website-name"
+              value={item}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="form-group">
+            <label className="form-label" for="website-url">
+              Website URL
+            </label>
+            <input
+              className="form-input"
+              type="text"
+              id="website-url"
+              value={url}
+              onChange={(e) => setUrl(e.target.value)}
+            />
+          </div>
+          <p style={{ color: "red" }}>{error}</p>
+          <button type="submit">Add Bookmark</button>
+        </form>
+      </div>
       <div>
         {list.map((c, id) => (
           <Item
