@@ -6,11 +6,11 @@ This is a simple Bookmark web application built using Html,CSS,ReactJS.It is use
 
 ## Demo
 
-Link 👉 To be added.
+Link 👉 https://nervous-fermi-c86968.netlify.app/
 
 ## Screenshot
 
-To be added.
+![screenshot](https://user-images.githubusercontent.com/4997491/100668634-3f8e7d80-3382-11eb-9aca-df7a05706162.JPG)
 
 ## Installation
 
